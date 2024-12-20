@@ -44,10 +44,10 @@ class Parser:
         try:
             data = loads(text)
         except:
-            print('РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ')
+            print('Некорректный ввод')
             return
         if data == text:
-            print('РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ')
+            print('Некорректный ввод')
             return
         return data
 
@@ -59,5 +59,5 @@ if __name__ == '__main__':
     try:
         parser.rec_parse(yaml_data, 0)
     except:
-        print('Р§С‚Рѕ-С‚Рѕ РїРѕС€Р»Рѕ РЅРµ С‚Р°Рє')
+        print('Что-то пошло не так')
     print(parser.s)
